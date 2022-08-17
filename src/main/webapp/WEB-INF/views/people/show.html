@@ -13,13 +13,13 @@
     <hr>
 </div>
 
-
 <div th:unless="${booksList.isEmpty()}">
     <hr/>
     <b>Books:</b>
     <br/>
     <table th:each="book : ${booksList}">
-        <p th:text="${book.getTitle() + ', ' + book.getAuthor() + ', ' + book.getYear_written()}">book</p>
+        <p th:style= "${book.getExpired()} ? 'color: red' : 'color: black'"
+           th:text="${book.getTitle() + ', ' + book.getAuthor() + ', ' + book.getYearWritten()}">book</p>
     </table>
 </div>
 

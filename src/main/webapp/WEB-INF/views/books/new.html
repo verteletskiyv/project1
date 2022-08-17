@@ -18,8 +18,8 @@
   <br/>
 
   <label for="year_written">Enter year of creation: </label>
-  <input type="text" th:field="*{year_written}" id="year_written"/>
-  <div style="color: red" th:if="${#fields.hasErrors('year_written')}" th:errors="*{year_written}">Creation year error</div>
+  <input type="text" th:field="*{yearWritten}" id="year_written"/>
+  <div style="color: red" th:if="${#fields.hasErrors('year_written')}" th:errors="*{yearWritten}">Creation year error</div>
   <br/>
 
   <input type="submit" value="Add!" />
